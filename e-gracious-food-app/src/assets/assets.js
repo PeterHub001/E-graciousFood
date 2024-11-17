@@ -13,7 +13,7 @@ const assets = Object.fromEntries(
 // Define menu list with references to images in assets
 export const menu_list = [
   {
-    menu_name: "Salad",
+    menu_name: "Greek Salad",
     menu_image: assets["menu_1"]
   },
   {
@@ -48,24 +48,98 @@ export const menu_list = [
 export const food_list = [
   {
     _id: "1",
-    name: "Greek salad",
+    name: "Greek Salad",
     image: assets["img_6"],
     price: 12,
-    description: "Food provides essential nutrients for overall health and well-being"
+    description: "Food provides essential nutrients for overall health and well-being",
+    category: "Salad"
   },
   {
     _id: "2",
-    name: "Greek salad",
+    name: "tomtom",
     image: assets["img_7"],
     price: 12,
-    description: "Food provides essential nutrients for overall health and well-being"
+    description: "Food provides essential nutrients for overall health and well-being",
+    category: "Nigerian dish"
   },
   {
     _id: "3",
     name: "Greek salad",
     image: assets["img_8"],
     price: 12,
+    description: "Food provides essential nutrients for overall health and well-being",
+    category: "Nigerian dish"
+  },
+  {
+    _id: "4",
+    name: "Greek salad",
+    image: assets["img_9"],
+    price: 12,
     description: "Food provides essential nutrients for overall health and well-being"
+  },
+  {
+    _id: "5",
+    name: "Greek salad",
+    image: assets["img_10"],
+    price: 12,
+    description: "Food provides essential nutrients for overall health and well-being",
+    category: "Pasteries"
+  },
+  {
+    _id: "6",
+    name: "Greek salad",
+    image: assets["img_11"],
+    price: 12,
+    description: "Food provides essential nutrients for overall health and well-being",
+    category: "Pasteries"
+  },
+  {
+    _id: "7",
+    name: "Greek salad",
+    image: assets["img_12"],
+    price: 12,
+    description: "Food provides essential nutrients for overall health and well-being",
+    category: "Pasteries"
+  },
+  {
+    _id: "8",
+    name: "Greek salad",
+    image: assets["img_13"],
+    price: 12,
+    description: "Food provides essential nutrients for overall health and well-being",
+    category: "Pasteries"
+  },
+  {
+    _id: "9",
+    name: "Greek salad",
+    image: assets["img_14"],
+    price: 12,
+    description: "Food provides essential nutrients for overall health and well-being",
+    category: "Salad"
+  },
+  {
+    _id: "10",
+    name: "Greek salad",
+    image: assets["img_15"],
+    price: 12,
+    description: "Food provides essential nutrients for overall health and well-being",
+    category: "Salad"
+  },
+  {
+    _id: "11",
+    name: "Greek salad",
+    image: assets["img_16"],
+    price: 12,
+    description: "Food provides essential nutrients for overall health and well-being",
+    category: "Salad"
+  },
+  {
+    _id: "12",
+    name: "Greek Salad",
+    image: assets["img_17"],
+    price: 12,
+    description: "Food provides essential nutrients for overall health and well-being",
+    category: "Nigerian dish"
   }
 ]
 
