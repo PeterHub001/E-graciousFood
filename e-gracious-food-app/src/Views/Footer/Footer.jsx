@@ -5,7 +5,7 @@ import assets from "../../assets/assets";
 
 const Footer = () => {
   return (
-    <div className="footer">
+    <div className="footer" id="footer">
       <div className="footer-content">
         <div className="footer-content-left">
           <img src={assets.logo} alt="" />
@@ -65,7 +65,7 @@ const Footer = () => {
         </div>
       </div>
       <hr />
-      <p className="footer-copyright">Copyright 2024 @ Egraciousfood.com - All Right Reserved.</p>
+      <p className="footer-copyright">Copyright 2024 &copy; Egraciousfood.com - All Right Reserved.</p>
     </div>
   );
 };

@@ -27,7 +27,6 @@
  list-style: none;
  margin-bottom: 10px;
  cursor: pointer;
-
 }
 
 .footer-content img{
@@ -44,4 +43,14 @@ h2{
     margin: 20px 0px;
     border: none;
     background-color: gray;
+}
+@media (max-width:750px) {
+    .footer-content{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .footer-copyright{
+        text-align: center;
+    }
 }

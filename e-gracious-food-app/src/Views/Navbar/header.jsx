@@ -1,38 +1,49 @@
-import React, {useState} from 'react'
-import './header.css';
-import assets from '../../assets/assets.js';
+import React, { useState } from "react";
+import "./header.css";
+import assets from "../../assets/assets.js";
+import { Link } from "react-router-dom";
 
-const Header = () => {
-    const [menu, setMenu] = useState("Home");
-
-
-
-
-
-
+const Header = ({setShowLogin}) => {
+  const [menu, setMenu] = useState("Home");
 
   return (
-    <div className='navbar'>
-      <img className='logo' src={assets.logo} alt="Logo" />
-      <ul className='navbar-links'>
-        <li onClick={()=>setMenu("Home")} className={menu==="Home"?"active":""}>Home</li>
-        <li onClick={()=>setMenu("Services")} className={menu==="Services"?"active":""}>Services</li>
-        <li onClick={()=>setMenu("About us")} className={menu==="About us"?"active":""}>About us</li>
-        <li onClick={()=>setMenu("Contact us")} className={menu==="Contact us"?"active":""}>Contact us</li>
+    <div className="navbar">
+      <img className="logo" src={assets.logo} alt="Logo" />
+      <ul className="navbar-links">
+        <Link to='/'          onClick={() => setMenu("home")}
+          className={menu === "home" ? "active" : ""}
+        >
+          home
+        </Link>
+        <a href="#explore-menu"
+          onClick={() => setMenu("menu")}
+          className={menu === "menu" ? "active" : ""}
+        >
+          menu
+        </a>
+        <a href="#app-download"
+          onClick={() => setMenu("mobile app")}
+          className={menu === "mobile app" ? "active" : ""}
+        >
+          mobile app
+        </a>
+        <a href="#footer"
+          onClick={() => setMenu("contact us")}
+          className={menu === "contact us" ? "active" : ""}
+        >
+          contact us
+        </a>
       </ul>
-      <div className='navbar-right'>
-        <img className='search-icon' src={assets.search_icon} alt="" />
-        <div className='navbar-cart-icon'>
-        <img className='cart-icon' src={assets.cart_icon} alt="" />
-        <div className='dot'></div>
+      <div className="navbar-right">
+        <img className="search-icon" src={assets.search_icon} alt="" />
+        <div className="navbar-cart-icon">
+          <img className="cart-icon" src={assets.cart_icon} alt="" />
+          <div className="dot"></div>
         </div>
-        <button>sign in</button>
-        
-
+        <button onClick={()=>setShowLogin(true)}>sign in</button>
       </div>
-      
     </div>
   );
-}
+};
 
 export default Header;
